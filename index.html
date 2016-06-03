@@ -4,31 +4,38 @@
     <title>porfolio de charles-andre</title> <!-- titre qui est afficher dans l'onglet du site -->
 		<meta charset="utf-8"> 	<!-- permet au site de lire les caractere speciaux -->
 		<script src="#"></script> <!-- line vers fichier javascript -->
-    <link rel="stylesheet" href="#"/>	<!-- lien vers le fichier css -->
+    <link rel="stylesheet" href="./css/navigation.css"/>	<!-- lien vers le fichier css du menu de navigation-->
+    <link rel="stylesheet" href="./css/article.css"/>	<!-- lien vers le fichier css des articles-->
   </head>
  <body>
 
 
 <!-- **************** NAV  *******************  -->
+<header id="header">
 <nav>
-    <div>
-      <h1 id="titre"> Portfolio <br> de <br> Charles-André  </h1> <!--titre principal localhost -->
+	<ul id="navigation">
+		<li style="margin-top:150px;"><a href="http://monstrathemes.ru"><span style="background-color:#383838;">Qui Suis Je</span></a></li>
 
-        <div id="menu">
-          <ul>
-            <li><a href="#">ACCUEIL</a></li>
-            <li><a href="#">Competence</a></li>
-            <li><a href="#">Formation</a></li>
-            <li><a href="#">Loisir</a></li>
 
-          </ul>
-        </div>
-      </div>
-</nav>
+		<li style="margin-top:24px;"><a href="http://monstrathemes.com/"><span style="background-color:#fa2b31;">Experience</span></a></li>
+
+
+		<li style="margin-top:50px;" class="drop"><a href="javascript:void(0);" class="drop_active"><span style="background-color:#94c516;">Formation</span></a></li>
+
+
+		<li style="margin-top:15px;"><a href="http://monstrathemes.com/tutorials"><span style="background-color:#f5a615;">Contact</span></a></li>
+
+
+		<li style="margin-top:100px;"><a href="http://monstrathemes.com/plugs"><span style="background-color:#94c516;">Plugins</span></a></li>
+
+   </ul>
+  </nav>
+ </div>
+</header>
 
 <!-- **************** Qui suis je  *******************  -->
 <section id="sectionquisuisje">
-    <h1 id="titre"> Portfolio <br> de <br> Charles-André  </h1>
+    <h1 id="titre"> Qui suis je  </h1>
 		<p>
 
 		</p>
@@ -37,7 +44,7 @@
 
 <!-- **************** Experience *******************  -->
 <section id="sectionexperience">
-    <h1 id="titre"> Portfolio <br> de <br> Charles-André  </h1>
+    <h1 id="titre"> Experience  </h1>
 		<p>
 
 		</p>
@@ -46,6 +53,7 @@
 
 <!-- **************** Formation *******************  -->
 <section id="sectionformation">
+    <h1 id="titre"> Formation  </h1>
 	<article>
       <ul id="listeformation">
         <li><a> 2010 </a></li>
@@ -61,8 +69,8 @@
 
 
 <!-- **************** CONTACT  *******************  -->
-    <footer>
-				<h3>CONTACT</h3>
+    <footer id="footercontact">
+				<h1 id="titre"> Contact  </h1>
      		<p>Email:  lunelfrance@gmail.com<br>OU<br>Au 01 02 03 04 05<br>du lundi au vendredi<br>de 9h30 à 12h00<br>et de<br>13h30 à 18h30<p>
 
 				<div id="lienweb">
