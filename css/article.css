@@ -3,22 +3,30 @@
   text-align: center;
 }
 
-
-#sectionexperience{
-  background-color: black;
+/* **************  ARTICLE QUI SUIS JE ************* */
+#sectionquisuisje{
+  background-image: url(http://img1.gtsstatic.com/wallpapers/5eb7272bafa1f8772f42fe0565059eaa_large.jpeg);
 }
 
+/* **************  ARTICLE EXPERIENCE ************* */
+#sectionexperience{
+  background-image: url(http://www.10wallpaper.com/wallpaper/medium/1411/experiment-Abstract_widescreen_wallpaper_medium.jpg);
+}
 
+/* **************  ARTICLE FORMATION ************* */
 #sectionformation{
   background-color: red;
 }
 
-
-#footercontact{
+/* **************  ARTICLE CONTACT ************* */
+#sectioncontact{
   background-color: green;
 }
 
-plugin{
-  margin-top:300px;
-  background-color:#94c516;
+section {
+  padding: 20px;
+  height: 500px;}
+section>h2{
+  text-align: center;
+  font-size: 50px;
 }

@@ -1,20 +1,44 @@
 
-body {
-    background-color: White;
-
+html{
+  background-color: black;
 }
 
-}
-img {
-    border: 0 none;
-    padding: 0;
-}
-a {
-color:lightgrey
-}
 
 #header {
     min-height: 330px;
+    font-family: 'Lobster', cursive;
+    background-image: url(http://wallpapers-3d.ru/sstorage/53/2011/01/image_530601111808086499297.jpg);
+    height: 600px;
+    display: flex;
+
+}
+
+
+#titreprincipal{
+  font-size: 60px;
+  text-align: center;
+  margin-left: 170px ;
+  margin-top: 150px ;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* **************** MENU DE MON PORTFOLIO ************** */
+
+.stylemenu1{
+  margin-top: 150px;
+  border-color: black;
+}
+.stylemenu2{
+  margin-top: 100px;
 }
 .header_inner {
     margin: 0 auto;
@@ -102,6 +126,7 @@ color:lightgrey
 }
 #navigation > li > a:before, #navigation > li > a:after {
     border-radius: 50px 50px 50px 50px;
+    background-color: black;
     bottom: 4px;
     box-shadow: 0 3px 0 5px rgba(0, 0, 0, 0.25);
     content: "";
@@ -129,62 +154,4 @@ color:lightgrey
     text-align: center;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     word-wrap: break-word;
-}
-#navigation ul {
-    -moz-box-sizing: border-box;
-    background: none repeat scroll 0 0 rgba(47, 35, 27, 0.95);
-    border-radius: 0 25px 0 25px;
-    left: 15px;
-    margin: 20px 0 0;
-    opacity: 0;
-    padding: 30px 0 20px;
-    position: absolute;
-    top: 35px;
-    transition: opacity 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
-    visibility: hidden;
-    z-index: 100;
-}
-#navigation li:hover > ul {
-    margin: 0;
-    opacity: 1;
-    visibility: visible;
-}
-#navigation ul ul {
-    left: 100%;
-    margin: 0 0 0 20px;
-    top: -30px;
-}
-#navigation ul li:hover > ul {
-    margin: 0 0 0 1px;
-}
-#navigation ul ul:before {
-    content: "";
-    height: 100%;
-    left: -1px;
-    position: absolute;
-    top: 0;
-    width: 1px;
-}
-#navigation ul li {
-    background: none repeat scroll 0 0 transparent;
-    display: block;
-    float: none;
-    height: auto;
-    padding: 0;
-}
-#navigation ul li a {
-    -moz-box-sizing: border-box;
-    display: block;
-    min-width: 145px;
-    padding: 0 17px 8px 25px;
-    text-align: left;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-}
-#navigation ul li a span {
-    display: block;
-    padding-right: 15px;
-    white-space: nowrap;
-}
-#navigation ul li.drop > a > span {
-
 }
