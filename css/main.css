@@ -1,0 +1,246 @@
+@charset "UTF-8";
+html {
+  background-color: black; }
+
+#header {
+  min-height: 330px;
+  font-family: 'Lobster', cursive;
+  background-image: url(http://www.sheepandco.fr/fond0.png?v=23e2z023aw4ij0);
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex; }
+
+#titreprincipal {
+  font-size: 50px;
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 150px;
+  opacity: 0.8;
+  color: #050000; }
+
+/* **************** MENU DE MON PORTFOLIO ************** */
+.stylemenu1 {
+  margin-top: 150px;
+  border-color: black; }
+
+.stylemenu2 {
+  margin-top: 100px; }
+
+.header_inner {
+  margin: 0 auto;
+  position: relative;
+  width: 940px; }
+
+.logo {
+  display: block;
+  height: 89px;
+  left: 41%;
+  position: absolute;
+  top: 190px;
+  width: 211px; }
+
+#header nav {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+
+.resp_navigation {
+  display: none; }
+
+#navigation, #navigation ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0; }
+
+#navigation:after {
+  clear: both; }
+
+#navigation {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 202; }
+
+#navigation li {
+  position: relative;
+  z-index: 203; }
+
+#navigation > li {
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: bounce;
+  animation-timing-function: ease;
+  display: block;
+  float: left;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 24px;
+  padding-top: 11px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out 0s; }
+
+#navigation > li:before {
+  background: none repeat scroll 0 0 #BEB5AE;
+  box-shadow: 3px 0 0 rgba(0, 0, 0, 0.22);
+  content: "";
+  height: 10000%;
+  left: 49.6%;
+  position: absolute;
+  top: -10000%;
+  width: 1px; }
+
+#navigation > li:nth-child(2n) {
+  margin-top: 79px; }
+
+#navigation > li:hover {
+  z-index: 10000; }
+
+#navigation > li:hover {
+  top: 10px; }
+
+#navigation a {
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  z-index: 204; }
+
+#navigation > li > a:before, #navigation > li > a:after {
+  border-radius: 50px 50px 50px 50px;
+  background-color: black;
+  bottom: 4px;
+  box-shadow: 0 3px 0 5px rgba(0, 0, 0, 0.25);
+  content: "";
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: auto;
+  transform: rotate(-4deg);
+  width: 54%;
+  z-index: -2; }
+
+#navigation > li > a:after {
+  left: auto;
+  right: 5px;
+  transform: rotate(4deg); }
+
+#navigation > li > a > span {
+  border-radius: 25px 25px 25px 25px;
+  display: block;
+  max-width: 201px;
+  min-height: 18px;
+  min-width: 135px;
+  padding: 12px 10px 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  word-wrap: break-word; }
+
+#titre {
+  font-size: 50px;
+  text-align: center; }
+
+/* **************  ARTICLE QUI SUIS JE ************* */
+#sectionquisuisje {
+  background-image: url(https://pixabay.com/static/uploads/photo/2012/12/25/08/34/wood-72380_960_720.jpg); }
+
+/* **************  ARTICLE EXPERIENCE ************* */
+#sectionexperience {
+  background-image: url(http://st.gde-fon.com/wallpapers_original/478554_derevo_parket_tekstura_1680x1050_www.Gde-Fon.com.jpg); }
+
+.log {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: crimson; }
+
+progress {
+  position: absolute;
+  left: 300px;
+  width: 500px;
+  height: 20px;
+  /* On efface le style par défaut du système */
+  -webkit-appearance: none;
+  appearance: none; }
+
+progress[value]::-webkit-progress-bar {
+  background: none;
+  border: 2px solid crimson;
+  border-radius: 10px;
+  padding: 2px; }
+
+progress[value]::-webkit-progress-value {
+  background: crimson;
+  border-radius: 10px;
+  border: none;
+  -webkit-animation: load 4s;
+  -moz-animation: load 4s;
+  -o-animation: load 4s;
+  -ms-animation: load 4s;
+  animation: load 4s;
+  -webkit-transition: ease 1s;
+  -moz-transition: ease 1s;
+  -o-transition: ease 1s;
+  -ms-transition: ease 1s;
+  transition: ease 1s; }
+
+/* **************  ARTICLE FORMATION ************* */
+#sectionformation {
+  background-image: url(http://www.veroniquemonbec.com/images/fondecran.jpg); }
+
+section {
+  padding: 20px;
+  height: 500px; }
+
+section > h2 {
+  text-align: center;
+  font-size: 50px; }
+
+/* **************  ARTICLE CONTACT ************* */
+#sectioncontact {
+  background-image: url(http://www.francine-dondja.com/img/header/header_middle.png); }
+
+#services {
+  text-align: center;
+  transform: translatez(0); }
+  #services h2 {
+    margin: 80px 0px 40px;
+    color: white;
+    font-size: 2.4em;
+    font-family: 'Raleway Dots', sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+  #services li {
+    width: 120px;
+    height: 140px;
+    display: inline-block;
+    margin: 20px;
+    list-style: none; }
+    #services li div {
+      width: 120px;
+      height: 120px;
+      color: green;
+      font-size: 3.4em;
+      text-align: center;
+      line-height: 120px;
+      background-color: white;
+      transition: all 0.5s ease; }
+      #services li div:hover {
+        transform: rotate(360deg);
+        border-radius: 100px; }
+    #services li span {
+      width: 120px;
+      height: 20px;
+      display: block;
+      padding: 15px 0px;
+      color: white;
+      font-family: 'Advent Pro', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

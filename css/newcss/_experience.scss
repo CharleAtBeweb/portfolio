@@ -1,0 +1,42 @@
+/* **************  ARTICLE EXPERIENCE ************* */
+#sectionexperience{
+  background-image: url(http://st.gde-fon.com/wallpapers_original/478554_derevo_parket_tekstura_1680x1050_www.Gde-Fon.com.jpg);
+}
+.log {
+  font-family:sans-serif;
+  font-weight:bold;
+  color:crimson;
+}
+
+
+progress {
+    position:absolute;
+    left:300px;
+    width:500px;
+    height:20px;
+  /* On efface le style par défaut du système */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar{
+	background: none;
+  border:2px solid crimson;
+  border-radius:10px;
+  padding:2px;
+}
+progress[value]::-webkit-progress-value{
+  background:crimson;
+  border-radius:10px;
+  border:none;
+  -webkit-animation:load 4s;
+  -moz-animation:load 4s;
+  -o-animation:load 4s;
+  -ms-animation:load 4s;
+  animation:load 4s;
+  -webkit-transition:ease 1s;
+  -moz-transition:ease 1s;
+  -o-transition:ease 1s;
+  -ms-transition:ease 1s;
+  transition:ease 1s;
+}
