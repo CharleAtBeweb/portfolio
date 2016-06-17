@@ -1,4 +1,41 @@
-@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Tangerine:400,700");
+@import url("http://fonts.googleapis.com/css?family=Lato:300");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+section {
+  padding: 20px;
+  height: 500px; }
+
+section > h2 {
+  text-align: center;
+  font-size: 50px; }
+
+#titre {
+  font-size: 50px;
+  text-align: center; }
+
+h2 {
+  font-family: 'Tangerine', cursive;
+  font-size: 80px; }
+
+.hr-break-line {
+  margin: 40px auto 30px;
+  padding: 0;
+  max-width: 512px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+  border-color: #888; }
+
+.hr-break-line:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-size: 2em;
+  color: #888;
+  background-color: #dedadd; }
+
 html {
   background-color: black; }
 
@@ -141,107 +178,153 @@ html {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   word-wrap: break-word; }
 
-#titre {
-  font-size: 50px;
-  text-align: center; }
-
 /* **************  ARTICLE QUI SUIS JE ************* */
 #sectionquisuisje {
-  background-image: url(/porfolio/img/qsj.jpeg); }
+  background-image: url(/porfolio/img/qsj.jpeg);
+  background-color: white; }
 
 /* **************  ARTICLE EXPERIENCE ************* */
 #sectionexperience {
   background-image: url(http://www.ehdesign.fr/images/background/fond_04.jpg); }
 
-.log {
-  font-family: sans-serif;
-  font-weight: bold;
-  color: crimson; }
+div.candidatos {
+  position: relative;
+  height: 40px;
+  margin: 40px 20px;
+  padding-left: 50px; }
 
-progress {
+div.candidatos img {
   position: absolute;
-  left: 300px;
-  width: 500px;
-  height: 20px;
-  /* On efface le style par défaut du système */
-  -webkit-appearance: none;
-  appearance: none; }
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: 1px; }
 
-progress[value]::-webkit-progress-bar {
-  background: none;
-  border: 2px solid crimson;
+div.candidatos .parcial {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  vertical-align: middle;
+  padding: 0 0 0 10px; }
+
+div.candidatos .parcial .info {
+  height: 15px;
+  position: relative; }
+
+div.candidatos .parcial .info > div {
+  float: left; }
+
+div.candidatos .parcial .info .nome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #192D49; }
+
+div.candidatos .parcial .info .eleito, div.candidatos .parcial .info .segundo-turno {
+  color: #fff;
+  padding: 0 5px 2px 5px;
+  border-radius: 2px; }
+
+div.candidatos .parcial .info .percentagem-num {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #192D49; }
+
+div.candidatos .parcial .progressBar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 5px 0 2px;
   border-radius: 10px;
-  padding: 2px; }
+  background: #e7e7e7; }
 
-progress[value]::-webkit-progress-value {
-  background: crimson;
-  border-radius: 10px;
-  border: none;
-  -webkit-animation: load 4s;
-  -moz-animation: load 4s;
-  -o-animation: load 4s;
-  -ms-animation: load 4s;
-  animation: load 4s;
-  -webkit-transition: ease 1s;
-  -moz-transition: ease 1s;
-  -o-transition: ease 1s;
-  -ms-transition: ease 1s;
-  transition: ease 1s; }
+div.candidatos .parcial .progressBar .percentagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #A4B5C0;
+  -webkit-transition: 5s all;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: animationProgress; }
 
+div.candidatos.brasil .parcial .percentagem {
+  background-color: #56BA62; }
+
+div.candidatos.uruguai .parcial .percentagem {
+  background-color: #4086CD; }
+
+div.candidatos.italia .parcial .percentagem {
+  background-color: #C44738; }
+
+div.candidatos.alemanha .parcial .percentagem {
+  background-color: #272726; }
+
+div.candidatos .parcial .partidas {
+  font-family: Arial, helvetica, Sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #9e9c9b;
+  text-transform: uppercase; }
+
+.percentual {
+  -webkit-transition: 5s all;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: animationProgress;
+  transition: 5s all;
+  animation-duration: 5s;
+  animation-name: animationProgress; }
+
+@-webkit-keyframes animationProgress {
+  from {
+    width: 0; } }
+@keyframes animationProgress {
+  from {
+    width: 0; } }
 /* **************  ARTICLE FORMATION ************* */
 #sectionformation {
-  background-image: url(http://www.planwallpaper.com/static/images/Stunning-retro-graphic-powerpoint-design-background.jpg); }
+  background-image: url(/porfolio/img/formation.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-section {
-  padding: 20px;
-  height: 500px; }
-
-section > h2 {
-  text-align: center;
-  font-size: 50px; }
-
-/* **************  ARTICLE CONTACT ************* */
 #sectioncontact {
-  background-image: url(http://cache3.asset-cache.net/xd/472698413.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE48003A9050774FCB00C6ADD405C56CDAC57BA67E1D37E6E8C956B6D53CF3E26C953);
-  background-repeat: no-repeat; }
+  background-color: white; }
 
-#services {
+.footer {
+  background-color: grey;
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center; }
+
+.social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: Entypo;
+  font-size: 35px;
   text-align: center;
-  transform: translatez(0); }
-  #services h2 {
-    margin: 80px 0px 40px;
-    color: white;
-    font-size: 2.4em;
-    font-family: 'Raleway Dots', sans-serif;
-    text-transform: uppercase;
-    text-align: center; }
-  #services li {
-    width: 120px;
-    height: 140px;
-    display: inline-block;
-    margin: 20px;
-    list-style: none; }
-    #services li div {
-      width: 120px;
-      height: 120px;
-      color: green;
-      font-size: 3.4em;
-      text-align: center;
-      line-height: 120px;
-      background-color: white;
-      transition: all 0.5s ease; }
-      #services li div:hover {
-        transform: rotate(360deg);
-        border-radius: 100px; }
-    #services li span {
-      width: 120px;
-      height: 20px;
-      display: block;
-      padding: 15px 0px;
-      color: white;
-      font-family: 'Advent Pro', sans-serif;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      text-align: center; }
+  color: black;
+  border-radius: 50%;
+  background: blue;
+  overflow: hidden;
+  transition: color .3s; }
+
+.social:hover {
+  color: #59d;
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

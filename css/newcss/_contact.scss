@@ -1,55 +1,36 @@
-/* **************  ARTICLE CONTACT ************* */
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
 #sectioncontact{
-  background-image: url(http://cache3.asset-cache.net/xd/472698413.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE48003A9050774FCB00C6ADD405C56CDAC57BA67E1D37E6E8C956B6D53CF3E26C953);
-  background-repeat: no-repeat;
+  background-color: white;
 }
 
-#services {
-		text-align: center;
-    transform: translatez(0);
 
-		h2 {
-			margin: 80px 0px 40px;
-			color: white;
-			font-size: 2.4em;
-			font-family: 'Raleway Dots', sans-serif;
-			text-transform: uppercase;
-			text-align: center;
-		}
 
-		li {
-			width: 120px;
-			height: 140px;
-			display: inline-block;
-			margin: 20px;
-			list-style: none;
+.footer {
+  background-color: grey;
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center;
+}
 
-			div {
-				width: 120px;
-				height: 120px;
-				color: green;
-				font-size: 3.4em;
-				text-align: center;
-				line-height: 120px;
-				background-color: white;
-				transition: all 0.5s ease;
+.social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: Entypo;
+  font-size: 35px;
+  text-align: center;
+  color: black;
+  border-radius: 50%;
+  background: blue;
+  overflow: hidden;
+  transition: color .3s;
+}
 
-				&:hover {
-					transform: rotate(360deg);
-					border-radius: 100px;
-				}
-			}
-
-			span {
-				width: 120px;
-				height: 20px;
-				display: block;
-				padding: 15px 0px;
-				color: white;
-				font-family: 'Advent Pro', sans-serif;
-				text-transform: uppercase;
-				font-size: 1.2em;
-				text-align: center;
-			}
-		}
-	}
+.social:hover {
+  color: #59d;
+  cursor: pointer; // quand je pointe ma souris dessus le pointeur devien bleu
+}

@@ -2,42 +2,109 @@
 #sectionexperience{
   background-image: url(http://www.ehdesign.fr/images/background/fond_04.jpg);
 }
-.log {
-  font-family:sans-serif;
-  font-weight:bold;
-  color:crimson;
+
+div.experience {
+    position:relative;
+    height: 40px;
+    margin:40px 20px;
+    padding-left:50px;
 }
-
-
-
-progress {
+div.experience img {
     position:absolute;
-    left:300px;
-    width:500px;
-    height:20px;
-  /* On efface le style par défaut du système */
-    -webkit-appearance: none;
-    appearance: none;
+    top:0;
+    left:0;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding:1px;
+}
+div.experience .parcial {
+    display:inline-block;
+    width:100%;
+    height:40px;
+    vertical-align:middle;
+    padding: 0 0 0 10px;
+}
+div.experience .parcial .info {
+    height:15px;
+    position: relative;
+}
+div.experience .parcial .info > div {
+    float:left;
+}
+div.experience .parcial .info .nome {
+    position: absolute;
+    top: 0;
+    left:0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #192D49;
+}
+div.experience .parcial .info .eleito, div.experience .parcial .info .segundo-turno {
+    color: #fff;
+    padding: 0 5px 2px 5px;
+    border-radius: 2px;
+}
+div.experience .parcial .info .textepourcentage {
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #192D49;
+}
+div.experience .parcial .progressBar {
+    position:relative;
+    width:100%;
+    height:7px;
+    margin:5px 0 2px;
+    border-radius:10px;
+    background: #e7e7e7;
+}
+div.experience .parcial .progressBar .percentagem {
+    position:absolute;
+    top:0;
+    left:0;
+    height:7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #A4B5C0;
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
 }
 
-progress[value]::-webkit-progress-bar{
-	background: none;
-  border:2px solid crimson;
-  border-radius:10px;
-  padding:2px;
+div.experience.html .parcial .percentagem {
+    background-color:#56BA62;
 }
-progress[value]::-webkit-progress-value{
-  background:crimson;
-  border-radius:10px;
-  border:none;
-  -webkit-animation:load 4s;
-  -moz-animation:load 4s;
-  -o-animation:load 4s;
-  -ms-animation:load 4s;
-  animation:load 4s;
-  -webkit-transition:ease 1s;
-  -moz-transition:ease 1s;
-  -o-transition:ease 1s;
-  -ms-transition:ease 1s;
-  transition:ease 1s;
+div.experience.css .parcial .percentagem {
+    background-color:#4086CD;
+}
+div.experience.javascript .parcial .percentagem {
+    background-color:#C44738;
+}
+div.experience.php .parcial .percentagem {
+    background-color:#272726;
+}
+
+.percentual {
+    -webkit-transition: 5s all;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: animationProgress;
+    transition: 5s all;
+    animation-duration: 5s;
+    animation-name: animationProgress;
+}
+@-webkit-keyframes animationProgress {
+    from {
+        width:0;
+    }
+}
+@keyframes animationProgress {
+    from {
+        width:0;
+    }
 }
