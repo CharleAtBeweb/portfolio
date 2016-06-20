@@ -9,19 +9,7 @@
 .stylemenu2{
   margin-top: 100px;
 }
-.header_inner {
-    margin: 0 auto;
-    position: relative;
-    width: 940px;
-}
-.logo {
-    display: block;
-    height: 89px;
-    left: 41%;
-    position: absolute;
-    top: 190px;
-    width: 211px;
-}
+
 #header nav {
     left: 0;
     position: absolute;
@@ -29,27 +17,14 @@
     top: 0;
     width: 100%;
 }
-.resp_navigation {
-    display: none;
-}
-#navigation, #navigation ul {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}
-#navigation:after {
-    clear: both;
-}
+
+
 #navigation {
     display: inline-block;
     margin: 0 auto;
     position: relative;
-    z-index: 202;
 }
-#navigation li {
-    position: relative;
-    z-index: 203;
-}
+
 #navigation > li {
     animation-delay: 0s;
     animation-duration: 2s;

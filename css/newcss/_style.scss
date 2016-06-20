@@ -28,7 +28,9 @@ html{
 
 // EFFET DE TEXTE
 @import url('http://fonts.googleapis.com/css?family=Tangerine:400,700');
-
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
 
 
 
@@ -74,3 +76,11 @@ h2 {
       color: #888;
       background-color: rgb(222, 218, 221);
     }
+
+// STYLE DES PARAGRAPHES DE MON PORFOLIO
+
+.paragraphe{
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  font-size: 25px;
+}

@@ -4,25 +4,33 @@
     <title>porfolio de charles-andre</title> <!-- titre qui est afficher dans l'onglet du site -->
 		<meta charset="utf-8"> 	<!-- permet au site de lire les caractere speciaux -->
     <link rel="stylesheet" href="./css/main.css"/>	<!-- lien vers le fichier css du menu de navigation-->
+    <script src="./javascript.js"></script> <!-- line vers fichier javascript -->
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   </head>
 <body>
 
 
-<!-- **************** NAV  *******************  -->
+<!-- **************** NAVIGATION + TITRE PRINCIPAL *******************  -->
 <header id="header">
-<nav>
-	<ul id="navigation">
-		<li class="stylemenu1"><a href="#sectionquisuisje"><span>Qui Suis Je</span></a></li>
-		<li class="stylemenu2"><a href="#sectionexperience"><span>Experience</span></a></li>
-		<li class="stylemenu1"><a href="#sectionformation"><span>Formation</span></a></li>
-		<li class="stylemenu2"><a href="#footercontact"><span>Contact</span></a></li>
-		<li class="stylemenu1"><a href="#"><span>CV</span></a></li>
-   </ul>
+
+  <nav>
+
+	   <ul id="navigation">
+		     <li class="stylemenu1"><a href="#sectionquisuisje"><span>Qui Suis Je</span></a></li>
+		     <li class="stylemenu2"><a href="#sectionexperience"><span>Experience</span></a></li>
+		     <li class="stylemenu1"><a href="#sectionformation"><span>Formation</span></a></li>
+		     <li class="stylemenu2"><a href="#footercontact"><span>Contact</span></a></li>
+		    <li class="stylemenu1"><a href="#"><span>CV</span></a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+    </ul>
   </nav>
+
   <div id="titreprincipal">
     <h1>Charles - Andre <br> Developpeur Web </h1>
   </div>
+
 </header>
 
 <!-- **************** Qui suis je  *******************  -->
@@ -43,9 +51,9 @@
     <h2> Experience  </h2> <!-- TITRE DE LA SECTION (EXPERIENCE) -->
     <hr class="hr-break-line"> <!-- BARE DE SOULIGNEMENT -->
     <br>
-    <p>
-      outes les technologies de développement web les plus connues (HTML5, CSS3, Javascript, PHP, SQL),
-      voila  mes compétences de developpement web junior
+    <p class="paragraphe">
+
+      Voila  mes compétences de developpement web junior (HTML5, CSS3, Javascript, PHP, SQL),
     </p>
 
 
@@ -54,12 +62,26 @@
 
 <!-- **************** Formation *******************  -->
 <div id="sectionformation">
-<section>
+  <section>
     <h2> Formation  </h2> <!-- TITRE DE LA SECTION (FORMATION) -->
-    <hr class="hr-break-line"> <!-- BARE DE SOULIGNEMENT -->
-    <br>
-  
-</section>
+
+      <div class="time">2015</div>
+      <li>
+        <h3>Titre Professionel ( commercial ) </h3>
+      </li>
+
+      <div class="time">2013</div>
+      <li>
+        <h3>Diplome CAP PRO</h3>
+      </li>
+
+      <div class="time">2012</div>
+      <li>
+        <h1>Diplome CFG</h1>
+      </li>
+
+  </div>
+ </section>
 </div>
 
 <!-- **************** CONTACT  *******************  -->
@@ -72,7 +94,7 @@
             <div class="social">&#62217;</div>
             <div class="social">&#62223;</div>
             <div class="social">&#62232;</div>
-</div>
+       </div>
   	</section>
   </body>
 </html>
