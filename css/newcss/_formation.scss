@@ -4,3 +4,55 @@
   background-repeat: no-repeat;
     background-size: cover;
 }
+.container {
+  padding: 1em;
+}
+
+.timeline {
+  position: relative;
+  overflow: auto;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background: gray;
+  left: 0;
+}
+.timeline h2 {
+  background: gray;
+  max-width: 6em;
+  margin: 0 auto 1em;
+  padding: 0.5em;
+  text-align: center;
+  position: relative;
+  clear: both;
+}
+.timeline ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+  z-index: 1;
+}
+.timeline li {
+  background: gray;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.timeline li:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 1em solid gray;
+  border-left: 1em solid transparent;
+  position: absolute;
+  left: -1em;
+  top: 0;
+}
+.timeline h3 {
+  margin-top: 0;
+}
+.timeline time {
+  font-style: italic;
+}

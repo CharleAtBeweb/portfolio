@@ -1,5 +1,29 @@
 // STYLE GENERAL DU PORFOLIO
+html{
+  background-color: black;
+}
 
+
+#header {
+    min-height: 330px;
+    font-family: 'Lobster', cursive;
+    background-image: url(http://rkueny.fr/img/home-bg.png);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+
+}
+
+// TITRE PRINCIPAL DE MON porfolio
+#titreprincipal{
+  font-size: 50px;
+  text-align: center;
+  margin-left: 300px ;
+  margin-top: 150px ;
+  opacity: 1;
+	color: black;
+}
 
 
 // EFFET DE TEXTE
@@ -32,7 +56,7 @@ h2 {
 
 // ligne de soulignement des sou titre de mes articles
 .hr-break-line {
-    margin: 40px auto 30px;
+    margin: 10px auto 30px;
     padding: 0;
     max-width: 512px;
     border: 0;

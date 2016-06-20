@@ -1,42 +1,10 @@
-html{
-  background-color: black;
-}
-
-
-#header {
-    min-height: 330px;
-    font-family: 'Lobster', cursive;
-    background-image: url(http://rkueny.fr/img/home-bg.png);
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-    display: flex;
-
-}
-
-
-#titreprincipal{
-  font-size: 50px;
-  text-align: center;
-  margin-left: 300px ;
-  margin-top: 150px ;
-  opacity: 0.8;
-	color: #050000;
-}
-
-
-
-
-
-
-
 
 
 /* **************** MENU DE MON PORTFOLIO ************** */
 
 .stylemenu1{
   margin-top: 150px;
-  border-color: black;
+  border-color: 	#FFFF00;
 }
 .stylemenu2{
   margin-top: 100px;
@@ -100,8 +68,8 @@ html{
 }
 
 #navigation > li:before {
-    background: none repeat scroll 0 0 #BEB5AE;
-    box-shadow: 3px 0 0 rgba(0, 0, 0, 0.22);
+    background: none repeat scroll 0 0 White;
+    box-shadow: 3px 0 0;
     content: "";
     height: 10000%;
     left: 49.6%;
@@ -129,7 +97,6 @@ html{
     border-radius: 50px 50px 50px 50px;
     background-color: black;
     bottom: 4px;
-    box-shadow: 0 3px 0 5px rgba(0, 0, 0, 0.25);
     content: "";
     height: 30px;
     left: 5px;
@@ -153,6 +120,5 @@ html{
     padding: 12px 10px 10px;
     position: relative;
     text-align: center;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     word-wrap: break-word;
 }
