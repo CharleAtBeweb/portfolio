@@ -36,13 +36,15 @@
 <!-- **************** Qui suis je  *******************  -->
 
 <section id="sectionquisuisje">
-    <h2 class="titresection1"> Qui suis je  </h2> <!-- TITRE DE LA SECTION (QUI SUIS JE ) -->
+  <div>
+    <h2> Qui suis je  </h2> <!-- TITRE DE LA SECTION (QUI SUIS JE ) -->
     <hr class="hr-break-line"> <!-- BARE DE SOULIGNEMENT -->
     <br>
 		<p class="paragraphe"> Un jeune développeur passionné par le web depuis des années et actuellement en formation a Beweb.
        je suis curieux et passionnés par informatique !
         Un pro avant tout,je suis un  jeune curieux et avide de connaissances qui ne demande qu'à apprendre et transmettre après.
 		</p>
+  </div>
     <img src="./img/logo.png"/> <!-- IMAGE DE PROFIL -->
 </section>
 
@@ -56,20 +58,30 @@
 
       Voila  mes compétences de developpement web junior (HTML5, CSS3, Javascript, PHP, SQL),
     </p>
-    <div class="section-wrapper clearfix">
-       	<h3 class="section-title">Skills</h3>  <!-- YOUR SET OF SKILLS  -->
-         	<ul>
-         		<li class="skill-percentage">HTML / HTML5</li>
-         		<li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
-         		<li class="skill-percentage">Javascript</li>
-         		<li class="skill-percentage">Jquery</li>
-         		<li class="skill-percentage">Wordpress</li>
-         		<li class="skill-percentage">Photoshop</li>
 
-         	</ul>
+ <div class="contenaireexperience">
 
-       </div>
+  <div class="boxexperience">
+    <h4>20%</h4>
+    <img class="logoexperience" src="./img/html.png"/> <!-- logo HTML -->
   </div>
+
+  <div class="boxexperience">
+    <h4>10%</h4>
+    <img class="logoexperience" src="./img/css.png"/> <!-- logo CSS -->
+  </div>
+
+  <div class="boxexperience">
+    <h4>2%</h4>
+    <img class="logoexperience" src="./img/php.png"/> <!-- logo PHP -->
+  </div>
+
+  <div class="boxexperience">
+    <h4>5%</h4>
+    <img class="logoexperience" src="./img/javascript.png"/> <!-- logo javascript -->
+  </div>
+
+ </div>
 </section>
 
 
@@ -102,12 +114,37 @@
 			<h2> Contact  </h2> <!-- TITRE DE LA SECTION (CONTACT) -->
       <hr class="hr-break-line"> <!-- BARE DE SOULIGNEMENT -->
       <br>
-        <div class="footer">
-            <div class="social">&#62220;</div>
-            <div class="social">&#62217;</div>
-            <div class="social">&#62223;</div>
-            <div class="social">&#62232;</div>
-       </div>
+
+      <form>
+        <label>
+          <span>Nom prenom</span>
+          <input type="text" id="userName" name="userName" placeholder="nom prenom" />
+        </label>
+
+        <label>
+          <span>Adresse Email</span>
+          <input type="email" id="userEmail" name="userEmail" placeholder="exemple@email.com" />
+        </label>
+
+        <label>
+          <span>Telephone</span>
+          <input type="tel" id="userPhone" name="userPhone" placeholder="01 02 03 0 405" />
+        </label>
+
+        <label class="full-width">
+          <span>votre demande</span>
+          <textarea></textarea>
+        </label>
+      <input type="submit" id="submitInfo" name="submitInfo" value="envoyer" />
+   </form>
+
+
+<div class="reseauxsocial">
+  <div class="social">&#62220;</div>
+  <div class="social">&#62217;</div>
+  <div class="social">&#62223;</div>
+  <div class="social">&#62232;</div>
+</div>
   	</section>
   </body>
 </html>

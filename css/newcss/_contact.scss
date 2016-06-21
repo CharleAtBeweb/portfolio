@@ -5,9 +5,7 @@
   background-color: white;
 }
 
-
-
-.footer {
+.reseauxsocial {
   background-size: cover;
   padding: 20px 0;
   text-align: center;
@@ -32,4 +30,79 @@
 .social:hover {
   color: #59d;
   cursor: pointer; // quand je pointe ma souris dessus le pointeur devien bleu
+}
+
+
+// **************************************************************
+
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+$ctaBackground: #ff006c;
+$ctaColor: #fff;
+
+$bodyBackground: #efefef;
+
+form {
+  background-color:darken($bodyBackground, 10%);
+  padding:1rem;
+  border-radius:.25rem;
+  * {
+    display:block;
+    font-size:1.25rem;
+  }
+  label {
+    cursor:pointer;
+    margin-bottom:1rem;
+    span {
+      font:2rem Lobster;
+      //text-shadow:1px 1px 0 #fff;
+    }
+    @media screen and (min-width:90em) {
+      width:32%;
+      float:left;
+      margin-right:2%;
+      &:nth-child(3n) {
+        margin-right:0;
+      }
+      &.full-width {
+        width:100%;
+      }
+    }
+  }
+  input, textarea {
+    width:100%;
+    padding:.5rem 1rem;
+    border:0 none;
+    line-height:2;
+    transition:box-shadow .2s ease-in-out;
+    &:focus {
+      outline:0 none;
+      box-shadow:0 0 .5rem darken($bodyBackground, 30%);
+    }
+  }
+}
+
+textarea {
+  min-height:150px;
+}
+
+input[type="submit"] {
+  background: $ctaBackground;
+  color: $ctaColor;
+  transition:all .2s ease-in-out;
+  cursor:pointer;
+  border-radius:.25rem;
+  font-family:Lobster;
+  text-transform:capitalize;
+  font-size:2rem;
+  line-height:normal;
+  &:hover, &:focus {
+    background: $ctaColor;
+    color: $ctaBackground;
+    box-shadow:none;
+  }
+  &:active {
+    -webkit-transform:scale(.95);
+  }
 }
