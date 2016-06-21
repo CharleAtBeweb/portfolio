@@ -9,3 +9,17 @@ head.style.width = '50%';
 
 
 }
+
+
+// SECTION EXPERIENCE
+$(function () {
+
+  var prog = $(".progress-bar");
+
+prog.eq(0).animate({width:"70%"}, 1500)
+
+prog.eq(1).animate({width:"40%"}, 1500)
+
+prog.eq(2).animate({width:"85%"}, 1500)
+
+});

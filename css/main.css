@@ -158,111 +158,72 @@ h2 {
 /* **************  ARTICLE QUI SUIS JE ************* */
 #sectionquisuisje {
   background-image: url(/porfolio/img/qsj.jpeg);
-  background-color: white; }
+  background-color: white;
+  display: flex; }
+
+.titresection {
+  position: relative;
+  bottom: 100px; }
 
 /* **************  ARTICLE EXPERIENCE ************* */
 #sectionexperience {
   background-image: url(http://www.ehdesign.fr/images/background/fond_04.jpg); }
 
-div.experience {
-  position: relative;
-  height: 40px;
-  margin: 40px 20px;
-  padding-left: 50px; }
+.section-wrapper {
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: red;
+  font-weight: 300;
+  margin-bottom: 20px; }
+  .section-wrapper:nth-child(3) {
+    padding-right: 8%; }
+  .section-wrapper h3.section-title {
+    color: red;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  .section-wrapper .skill-percentage {
+    margin-bottom: 10px;
+    position: relative; }
+    .section-wrapper .skill-percentage::after {
+      content: "";
+      width: 100%;
+      height: 6px;
+      background: red;
+      display: block;
+      margin-top: 3px; }
+    .section-wrapper .skill-percentage::before {
+      content: "";
+      height: 6px;
+      background: red;
+      position: absolute;
+      margin-top: 3px;
+      bottom: 0; }
+    .section-wrapper .skill-percentage:nth-child(1)::before {
+      width: 80%;
+      animation: skill_1 time ease; }
+    .section-wrapper .skill-percentage:nth-child(2)::before {
+      width: 90%;
+      animation: skill_2 time ease; }
+    .section-wrapper .skill-percentage:nth-child(3)::before {
+      width: 50%;
+      animation: skill_3 time ease; }
+    .section-wrapper .skill-percentage:nth-child(4)::before {
+      width: 60%;
+      animation: skill_4 time ease; }
+    .section-wrapper .skill-percentage:nth-child(5)::before {
+      width: 70%;
+      animation: skill_5 time ease; }
+    .section-wrapper .skill-percentage:nth-child(6)::before {
+      width: 70%;
+      animation: skill_6 time ease; }
+    .section-wrapper .skill-percentage:nth-child(7)::before {
+      width: 70%;
+      animation: skill_6 time ease; }
 
-div.experience img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  padding: 1px; }
-
-div.experience .parcial {
-  display: inline-block;
-  width: 100%;
-  height: 40px;
-  vertical-align: middle;
-  padding: 0 0 0 10px; }
-
-div.experience .parcial .info {
-  height: 15px;
-  position: relative; }
-
-div.experience .parcial .info > div {
-  float: left; }
-
-div.experience .parcial .info .nome {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 15px;
-  font-weight: 600;
-  color: #192D49; }
-
-div.experience .parcial .info .eleito, div.experience .parcial .info .segundo-turno {
-  color: #fff;
-  padding: 0 5px 2px 5px;
-  border-radius: 2px; }
-
-div.experience .parcial .info .textepourcentage {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #192D49; }
-
-div.experience .parcial .progressBar {
-  position: relative;
-  width: 100%;
-  height: 7px;
-  margin: 5px 0 2px;
-  border-radius: 10px;
-  background: #e7e7e7; }
-
-div.experience .parcial .progressBar .percentagem {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 7px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: #A4B5C0;
-  -webkit-transition: 5s all;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-name: animationProgress; }
-
-div.experience.html .parcial .percentagem {
-  background-color: #56BA62; }
-
-div.experience.css .parcial .percentagem {
-  background-color: #4086CD; }
-
-div.experience.javascript .parcial .percentagem {
-  background-color: #C44738; }
-
-div.experience.php .parcial .percentagem {
-  background-color: #272726; }
-
-.percentual {
-  -webkit-transition: 5s all;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-name: animationProgress;
-  transition: 5s all;
-  animation-duration: 5s;
-  animation-name: animationProgress; }
-
-@-webkit-keyframes animationProgress {
-  from {
-    width: 0; } }
-@keyframes animationProgress {
-  from {
-    width: 0; } }
 /* **************  ARTICLE FORMATION ************* */
 #sectionformation {
   background-image: url(/porfolio/img/formation.png);
