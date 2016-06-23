@@ -272,33 +272,4 @@ input[type="submit"] {
   input[type="submit"]:active {
     -webkit-transform: scale(0.95); }
 
-@media screen and (max-width: 680px) {
-  ul.topnav li:not(:first-child) {
-    display: none; }
-
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block; } }
-@media screen and (max-width: 680px) {
-  ul.navigation.responsive {
-    position: relative; }
-
-  ul.navigation.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-
-  ul.navigation.responsive li {
-    float: none;
-    display: inline; }
-
-  ul.navigation.responsive li a {
-    display: block;
-    text-align: left; }
-
-  #titreprincipal {
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 350px; } }
-
 /*# sourceMappingURL=main.css.map */
