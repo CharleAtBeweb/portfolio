@@ -27,44 +27,44 @@ html {
 
 section {
   padding: 20px;
-  height: 500px; }
-
-section > h2 {
-  text-align: center;
-  font-size: 50px; }
-
-#titre {
-  font-size: 50px;
-  text-align: center; }
+  height: auto; }
 
 h2 {
   font-family: 'Tangerine', cursive;
-  font-size: 80px; }
+  font-size: 80px;
+  text-align: center; }
 
-.hr-break-line {
-  margin: 10px auto 30px;
-  padding: 0;
-  max-width: 512px;
-  border: 0;
-  border-top: solid 5px;
-  text-align: center;
-  border-color: #888; }
+@media screen and (max-width: 1020px) {
+  h2 {
+    font-size: 120px; }
 
-.hr-break-line:after {
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -.8em;
-  padding: 0 .25em;
-  font-size: 2em;
-  color: #888;
-  background-color: #dedadd; }
+  .hr-break-line {
+    margin: 10px auto 30px;
+    padding: 0;
+    max-width: 512px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    border-color: #888; }
 
-.paragraphe {
-  font-family: 'Bangers', cursive;
-  text-align: center;
-  font-size: 25px; }
+  .hr-break-line:after {
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-size: 2em;
+    color: #888;
+    background-color: #dedadd; }
 
+  .paragraphe {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    font-size: 25px; } }
+@media screen and (max-width: 1020px) and (max-width: 1020px) {
+  .paragraphe {
+    font-size: 50px;
+    text-align: center; } }
 /* **************** MENU DE MON PORTFOLIO ************** */
 .stylemenu1 {
   margin-top: 150px;
@@ -156,12 +156,29 @@ h2 {
   text-align: center;
   word-wrap: break-word; }
 
+@media screen and (max-width: 960px) {
+  header nav {
+    position: absolute; }
+
+  ul {
+    background: white;
+    text-align: center; }
+    ul span {
+      display: block;
+      max-width: 201px;
+      min-height: 18px;
+      min-width: 135px;
+      position: relative;
+      text-align: center; } }
 /* **************  ARTICLE QUI SUIS JE ************* */
 #sectionquisuisje {
   background-image: url(/porfolio/img/qsj.jpeg);
   background-color: white;
   display: flex; }
 
+@media screen and (max-width: 960px) {
+  #sectionquisuisje img {
+    display: none; } }
 div > h2 {
   text-align: center; }
 
@@ -171,22 +188,31 @@ div > h2 {
 
 .contenaireexperience {
   display: flex;
-  margin-left: 250px; }
+  margin-left: 30%; }
 
+@media screen and (max-width: 960px) {
+  .contenaireexperience {
+    margin-left: 0%; } }
 .logoexperience {
   display: flex;
   flex-direction: row;
-  width: 100px;
-  height: 100px; }
+  width: auto;
+  height: auto; }
 
+@media screen and (max-width: 960px) {
+  .logoexperience {
+    width: auto;
+    height: auto; } }
 .boxexperience {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
   width: 100px;
   text-align: center;
-  padding-right: 100px; }
+  padding-right: 5%; }
 
+@media screen and (max-width: 960px) {
+  padding-left: 2%; }
 /* **************  ARTICLE FORMATION ************* */
 #sectionformation {
   background-image: url(/porfolio/img/formation.png);
@@ -195,7 +221,9 @@ div > h2 {
   text-align: center; }
 
 #sectioncontact {
-  background-color: white; }
+  background-color: white;
+  width: auto;
+  height: auto; }
 
 .reseauxsocial {
   background-size: cover;
@@ -233,7 +261,7 @@ form {
     margin-bottom: 1rem; }
     form label span {
       font: 2rem Lobster; }
-    @media screen and (min-width: 90em) {
+    @media screen and (max-width: 960px) {
       form label {
         width: 32%;
         float: left;

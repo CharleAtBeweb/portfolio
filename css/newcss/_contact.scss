@@ -3,6 +3,8 @@
 
 #sectioncontact{
   background-color: white;
+  width: auto;
+  height: auto;
 }
 
 // PAGE CONTACT CORDONER PRIVÉ
@@ -38,11 +40,10 @@
 
 // PAGE CONTACT FORMULAIRE DE CONTACT -*****************************
 
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Lobster);//effect de texte
 
-$ctaBackground: #ff006c;
+$ctaBackground: #ff006c; // couleur de fond
 $ctaColor: #fff;
-
 $bodyBackground: #efefef;
 
 form {
@@ -60,7 +61,7 @@ form {
       font:2rem Lobster;
       //text-shadow:1px 1px 0 #fff;
     }
-    @media screen and (min-width:90em) {
+    @media screen and (max-width: 960px){
       width:32%;
       float:left;
       margin-right:2%;
