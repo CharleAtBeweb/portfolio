@@ -11,23 +11,22 @@
 
 
 <!-- **************** NAVIGATION + TITRE PRINCIPAL *******************  -->
-<header id="header">
+<header>
 
-  <nav>
+<!-- MENU  -->
 
-	   <ul id="navigation">
-		     <li class="stylemenu1"><a href="#sectionquisuisje"><span>Qui Suis Je</span></a></li>
-		     <li class="stylemenu2"><a href="#sectionexperience"><span>Experience</span></a></li>
-		     <li class="stylemenu1"><a href="#sectionformation"><span>Formation</span></a></li>
-		     <li class="stylemenu2"><a href="#footercontact"><span>Contact</span></a></li>
-		     <li class="stylemenu1"><a href="#"><span>Projet</span></a></li>
+    <nav>
+      <ul>
+        <li><a href="#sectionquisuisje"><span>Qui Suis Je</span></a></li>
+        <li><a href="#sectionexperience"><span>Experience</span></a></li>
+        <li><a href="#sectionformation"><span>Formation</span></a></li>
+        <li><a href="#"><span>CV</span></a></li>
+        <li><a href="#footercontact"><span>Contact</span></a></li>
 
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
+      </ul>
+    </nav>
 
-    </ul>
-  </nav>
+<!-- TITRE  -->
 
   <div id="titreprincipal">
     <h1>Charles - Andre <br> Developpeur Web </h1>
@@ -119,53 +118,35 @@
 
       <form>
         <label>
-          <span>Nom prenom</span>
-          <input type="text" id="userName" name="userName" placeholder="nom prenom" />
+          <span>Name</span>
+          <input type="text" id="userName" name="userName" placeholder="John Doe" />
         </label>
 
         <label>
-          <span>Adresse Email</span>
-          <input type="email" id="userEmail" name="userEmail" placeholder="exemple@email.com" />
+          <span>Email</span>
+          <input type="email" id="userEmail" name="userEmail" placeholder="exemple@domain.com" />
         </label>
 
         <label>
-          <span>Telephone</span>
+          <span>Phone</span>
           <input type="tel" id="userPhone" name="userPhone" placeholder="01 02 03 0 405" />
         </label>
 
         <label class="full-width">
-          <span>votre demande</span>
+          <span>Comments</span>
           <textarea></textarea>
         </label>
-      <input type="submit" id="submitInfo" name="submitInfo" value="envoyer" />
-   </form>
 
-   <!--PAGE CONTACT-->
+  <input type="submit" id="submitInfo" name="submitInfo" value="register" />
+</form>
 
-     <section class="showcontent page contact">
-       <div class="contact-wrap elem">
-         <div class="contact-card">
-
-           <div class="transition-bar">
-             <p class="active">contactez moi </p>
-             <p class="inactive">Let's get in touch</p>
-           </div>
-             <div class="contact-content-wrap">
-             <div class="content contact-content-1">
-               <p><span>+33.XXX.XXX.XXX</span></p>
-               <p><span>tpodgro@gmail.com</span></p>
-               <p><span>Actually living in Paris</span></p>
-
-           </div>
-         </div>
+        <div class="footer">
+            <div class="social">&#62220;</div>
+            <div class="social">&#62217;</div>
+            <div class="social">&#62223;</div>
+            <div class="social">&#62232;</div>
        </div>
-       </section>
-<div class="reseauxsocial">
-  <div class="social">&#62220;</div>
-  <div class="social">&#62217;</div>
-  <div class="social">&#62223;</div>
-  <div class="social">&#62232;</div>
-</div>
+
   	</section>
   </body>
 </html>

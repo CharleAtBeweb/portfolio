@@ -1,27 +1,27 @@
 @import url("http://fonts.googleapis.com/css?family=Tangerine:400,700");
-@import url("https://fonts.googleapis.com/css?family=Bangers");
 @import url("http://fonts.googleapis.com/css?family=Lato:300");
 @import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url("http://fonts.googleapis.com/css?family=Lato:300");
 @import url("http://weloveiconfonts.com/api/?family=entypo");
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 html {
   background-color: black; }
 
-#header {
+header {
   min-height: 330px;
-  font-family: 'Lobster', cursive;
   background-image: url(http://rkueny.fr/img/home-bg.png);
   background-size: cover;
   width: 100%;
-  height: 700px;
-  display: flex; }
+  height: 650px; }
 
 #titreprincipal {
-  font-size: 50px;
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
   text-align: center;
-  margin-left: 300px;
-  margin-top: 150px;
+  margin-top: 30px;
   opacity: 1;
   color: black; }
 
@@ -34,154 +34,70 @@ h2 {
   font-size: 80px;
   text-align: center; }
 
-@media screen and (max-width: 1020px) {
-  h2 {
-    font-size: 120px; }
+.hr-break-line {
+  margin: 10px auto 30px;
+  padding: 0;
+  max-width: 512px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+  border-color: #888; }
 
-  .hr-break-line {
-    margin: 10px auto 30px;
-    padding: 0;
-    max-width: 512px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-    border-color: #888; }
+.hr-break-line:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-size: 2em;
+  color: #888;
+  background-color: #dedadd; }
 
-  .hr-break-line:after {
-    font-family: FontAwesome;
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-size: 2em;
-    color: #888;
-    background-color: #dedadd; }
+.paragraphe {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  font-size: 25px; }
 
-  .paragraphe {
-    font-family: 'Bangers', cursive;
-    text-align: center;
-    font-size: 25px; } }
-@media screen and (max-width: 1020px) and (max-width: 1020px) {
-  .paragraphe {
-    font-size: 50px;
-    text-align: center; } }
 /* **************** MENU DE MON PORTFOLIO ************** */
-.stylemenu1 {
-  margin-top: 150px;
-  border-color: #FFFF00; }
-
-.stylemenu2 {
-  margin-top: 100px; }
-
-#header nav {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100%; }
-
-#navigation {
-  display: inline-block;
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
   margin: 0 auto;
-  position: relative; }
+  padding: 50px 0; }
 
-#navigation > li {
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-name: bounce;
-  animation-timing-function: ease;
-  display: block;
-  float: left;
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: 24px;
-  padding-top: 11px;
-  position: relative;
-  top: 0;
-  transition: top 0.3s ease-in-out 0s; }
-
-#navigation > li:before {
-  background: none repeat scroll 0 0 White;
-  box-shadow: 3px 0 0;
-  content: "";
-  height: 10000%;
-  left: 49.6%;
-  position: absolute;
-  top: -10000%;
-  width: 1px; }
-
-#navigation > li:nth-child(2n) {
-  margin-top: 79px; }
-
-#navigation > li:hover {
-  z-index: 10000; }
-
-#navigation > li:hover {
-  top: 10px; }
-
-#navigation a {
-  -moz-box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  z-index: 204; }
-
-#navigation > li > a:before, #navigation > li > a:after {
-  border-radius: 50px 50px 50px 50px;
-  background-color: black;
-  bottom: 4px;
-  content: "";
-  height: 30px;
-  left: 5px;
-  position: absolute;
-  top: auto;
-  transform: rotate(-4deg);
-  width: 54%;
-  z-index: -2; }
-
-#navigation > li > a:after {
-  left: auto;
-  right: 5px;
-  transform: rotate(4deg); }
-
-#navigation > li > a > span {
-  border-radius: 25px 25px 25px 25px;
-  display: block;
-  max-width: 201px;
-  min-height: 18px;
-  min-width: 135px;
-  padding: 12px 10px 10px;
-  position: relative;
+nav ul {
   text-align: center;
-  word-wrap: break-word; }
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%); }
 
-@media screen and (max-width: 960px) {
-  header nav {
-    position: absolute; }
+nav ul li {
+  display: inline-block; }
 
-  ul {
-    background: white;
-    text-align: center; }
-    ul span {
-      display: block;
-      max-width: 201px;
-      min-height: 18px;
-      min-width: 135px;
-      position: relative;
-      text-align: center; } }
+nav ul li a {
+  padding: 18px;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  display: block; }
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7); }
+
 /* **************  ARTICLE QUI SUIS JE ************* */
 #sectionquisuisje {
   background-image: url(/porfolio/img/qsj.jpeg);
   background-color: white;
   display: flex; }
 
-@media screen and (max-width: 960px) {
-  #sectionquisuisje img {
-    display: none; } }
 div > h2 {
   text-align: center; }
 
+@media screen and (max-width: 840px) {
+  img {
+    display: none; } }
 /* **************  ARTICLE EXPERIENCE ************* */
 #sectionexperience {
   background-image: url(http://www.ehdesign.fr/images/background/fond_04.jpg); }
@@ -225,7 +141,7 @@ div > h2 {
   width: auto;
   height: auto; }
 
-.reseauxsocial {
+.footer {
   background-size: cover;
   padding: 20px 0;
   text-align: center; }
@@ -241,12 +157,12 @@ div > h2 {
   text-align: center;
   color: black;
   border-radius: 50%;
-  background: blue;
+  background: grey;
   overflow: hidden;
   transition: color .3s; }
 
 .social:hover {
-  color: #59d;
+  color: red;
   cursor: pointer; }
 
 form {

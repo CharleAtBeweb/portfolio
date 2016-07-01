@@ -10,7 +10,7 @@
 // PAGE CONTACT CORDONER PRIVÉ
 
 // PAGE CONTACT RESEAUX SOCIAL ***********************
-.reseauxsocial {
+.footer{
   background-size: cover;
   padding: 20px 0;
   text-align: center;
@@ -27,13 +27,13 @@
   text-align: center;
   color: black;
   border-radius: 50%;
-  background: blue;
+  background: grey;
   overflow: hidden;
   transition: color .3s;
 }
 
 .social:hover {
-  color: #59d;
+  color: red;
   cursor: pointer; // quand je pointe ma souris dessus le pointeur devien bleu
 }
 

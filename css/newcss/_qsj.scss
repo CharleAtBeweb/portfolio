@@ -5,15 +5,14 @@
   background-color: white;
   display: flex;
 }
-@media screen and (max-width: 960px){
-  #sectionquisuisje{
-    img{
-      display: none;
-    }
-
-  }
-}
 
 div>h2{
   text-align: center;
+}
+
+@media screen and (max-width: 840px){
+  header{
+  }img{
+    display: none;
+  }
 }
