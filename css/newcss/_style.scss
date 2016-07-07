@@ -39,7 +39,7 @@ header {
 // PLACEMENT DE TOUTES MES SECTIONS
 section {
   padding: 20px;
-  height: auto;
+  //height: auto;
 }
 
 // STYLE DE TOUT LES SECOND TITRE
@@ -49,7 +49,11 @@ h2 {
   text-align: center;
 }
 
-
+h3{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
 // ligne de soulignement des sou titre de mes articles
 .hr-break-line {
     margin: 10px auto 30px;
